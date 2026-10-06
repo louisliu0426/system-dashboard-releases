@@ -1,18 +1,21 @@
 # System Dashboard
 
-全螢幕的系統儀表板：一鍵蓋在螢幕最上層，看 CPU、顯卡、記憶體、硬碟、風扇，以及家裡的伺服器（Proxmox）；
+全螢幕的系統儀表板（Windows、Linux）：一鍵蓋在螢幕最上層，看 CPU、顯卡、記憶體、硬碟、風扇，以及家裡的伺服器（Proxmox）；
 另一台螢幕同時輪播照片。再按一下就收起來，平常不佔資源。
 
-A full-screen system dashboard: one click puts it on top of everything — CPU, GPU, memory, disks, fans and
+A full-screen system dashboard for Windows and Linux: one click puts it on top of everything — CPU, GPU, memory, disks, fans and
 your home server (Proxmox) — while your other monitor shows a photo slideshow. Click again and it is gone.
 
 ![Dashboard](screenshots/dashboard-standard.png)
 
 ## 下載 Download
 
-**[⬇ 下載 Windows 安裝檔 / Download for Windows](https://github.com/louisliu0426/system-dashboard-releases/releases/latest/download/SystemDashboard-Setup.exe)**
+**[⬇ Windows 安裝檔 / Download for Windows](https://github.com/louisliu0426/system-dashboard-releases/releases/latest/download/SystemDashboard-Setup.exe)**
+　Windows 10 / 11（64 位元 / 64-bit）
 
-- Windows 10 / 11（64 位元 / 64-bit）
+**[⬇ Linux 安裝包 / Download for Linux (.deb)](https://github.com/louisliu0426/system-dashboard-releases/releases/latest/download/system-dashboard_amd64.deb)**
+　Ubuntu 22.04+ / Debian 系（GNOME，64 位元 / 64-bit）：`sudo apt install ./system-dashboard_amd64.deb`
+
 - 測試版 Beta — 安裝說明 [中文](https://github.com/louisliu0426/system-dashboard-releases/releases/latest/download/INSTALL-zh-TW.txt) ·
   [English](https://github.com/louisliu0426/system-dashboard-releases/releases/latest/download/INSTALL-en.txt)
 - 所有版本 All releases: [Releases](https://github.com/louisliu0426/system-dashboard-releases/releases)
@@ -55,10 +58,10 @@ yourself (downloading frame photos, connecting to your own servers).
 ## 回報問題 Feedback
 
 請到 [Issues](https://github.com/louisliu0426/system-dashboard-releases/issues) 回報，附上記錄檔
-`%LOCALAPPDATA%\SystemDashboard\state\app.log`。
+（Windows：`%LOCALAPPDATA%\SystemDashboard\state\app.log`；Linux：`~/.local/state/system-dashboard/app.log`）。
 
 Please open an [issue](https://github.com/louisliu0426/system-dashboard-releases/issues) and attach the log file
-`%LOCALAPPDATA%\SystemDashboard\state\app.log`.
+(Windows: `%LOCALAPPDATA%\SystemDashboard\state\app.log`; Linux: `~/.local/state/system-dashboard/app.log`).
 
 ---
 
