@@ -14,7 +14,7 @@ your home server (Proxmox) — while your other monitor shows a photo slideshow.
 　Windows 10 / 11（64 位元 / 64-bit）
 
 **[⬇ Linux 安裝包 / Download for Linux (.deb)](https://github.com/louisliu0426/system-dashboard-releases/releases/latest/download/system-dashboard_amd64.deb)**
-　Ubuntu 22.04+ / Debian 系（GNOME，64 位元 / 64-bit）：`sudo apt install ./system-dashboard_amd64.deb`
+　Ubuntu 22.04+ / Debian 系（GNOME，64 位元 / 64-bit；已在 24.04、26.04 實測 / tested on 24.04 and 26.04）：`sudo apt install ./system-dashboard_amd64.deb`
 
 - 測試版 Beta — 安裝說明 [中文](https://github.com/louisliu0426/system-dashboard-releases/releases/latest/download/INSTALL-zh-TW.txt) ·
   [English](https://github.com/louisliu0426/system-dashboard-releases/releases/latest/download/INSTALL-en.txt)
