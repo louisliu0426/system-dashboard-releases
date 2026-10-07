@@ -18,11 +18,14 @@ your home server (Proxmox) — while your other monitor shows a photo slideshow.
 
 - 測試版 Beta — 安裝說明 [中文](https://github.com/louisliu0426/system-dashboard-releases/releases/latest/download/INSTALL-zh-TW.txt) ·
   [English](https://github.com/louisliu0426/system-dashboard-releases/releases/latest/download/INSTALL-en.txt)
+- 更新日誌 Changelog: [CHANGELOG.md](CHANGELOG.md)
 - 所有版本 All releases: [Releases](https://github.com/louisliu0426/system-dashboard-releases/releases)
 
 ## 特色
 
 - **一鍵開關**：左鍵點工具列圖示，或按 `Ctrl+Alt+Z`（可自訂），全螢幕遊戲中也能叫出來
+- **立刻黑屏**：按 `Ctrl+Alt+L` 螢幕直接關掉，按任一鍵或動滑鼠就回到儀表板
+- **快捷鍵檢查**：設快捷鍵時列出跟系統、輸入法、瀏覽器等哪些快捷鍵重複，並建議沒人用的組合
 - **碼表式儀表**：CPU／顯卡溫度和使用率、記憶體、網速、風扇轉速、每顆硬碟的用量、溫度和健康度
 - **過熱警告**：溫度進紅區、或閒置卻很熱（風扇可能停了）時，錶盤整個變紅
 - **相框**：另一台螢幕輪播照片（自己的照片、或自動下載高畫質風景照）；只有一台螢幕時跟儀表板輪流
@@ -33,6 +36,9 @@ your home server (Proxmox) — while your other monitor shows a photo slideshow.
 ## Features
 
 - **One click**: left-click the tray icon or press `Ctrl+Alt+Z` (customisable) — works over full-screen games
+- **Screen off now**: press `Ctrl+Alt+L` to turn the screens off; any key or a mouse move brings the dashboard back
+- **Hotkey check**: when you set a hotkey it lists clashes with system, input method, browser and other shortcuts,
+  and suggests free combinations
 - **Gauges**: CPU / GPU temperature and load, memory, network, fan speeds, and usage, temperature and health of every disk
 - **Overheat warnings**: the gauge turns red in the red zone, or when the machine is idle but hot (a fan may have stopped)
 - **Photo frame**: a slideshow on your other monitor (your own photos, or high-quality landscapes downloaded automatically);
