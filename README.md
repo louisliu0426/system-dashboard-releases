@@ -28,6 +28,9 @@ your home server (Proxmox) — while your other monitor shows a photo slideshow.
 - **快捷鍵檢查**：設快捷鍵時列出跟系統、輸入法、瀏覽器等哪些快捷鍵重複，並建議沒人用的組合
 - **碼表式儀表**：CPU／顯卡溫度和使用率、記憶體、網速、風扇轉速、每顆硬碟的用量、溫度和健康度
 - **過熱警告**：溫度進紅區、或閒置卻很熱（風扇可能停了）時，錶盤整個變紅
+- **日誌**：點一下卡片看那張卡片的紀錄：7 天的溫度圖、何時過熱、降頻、風扇停了；儀表板收著也在背景記
+- **當下通知**：過熱、風扇停了、伺服器連不上、硬碟快滿時馬上跳通知（可以關掉）
+- **直式螢幕**：螢幕轉成直的，自動換成直式版型
 - **相框**：另一台螢幕輪播照片（自己的照片、或自動下載高畫質風景照）；只有一台螢幕時跟儀表板輪流
 - **家用伺服器**：Proxmox 的 CPU、記憶體、虛擬機／容器、儲存池，多台輪流顯示（選用）
 - **開箱即用**：安裝時一起裝好溫度感測，不用另外裝其他軟體；介面自動中英文
@@ -41,6 +44,11 @@ your home server (Proxmox) — while your other monitor shows a photo slideshow.
   and suggests free combinations
 - **Gauges**: CPU / GPU temperature and load, memory, network, fan speeds, and usage, temperature and health of every disk
 - **Overheat warnings**: the gauge turns red in the red zone, or when the machine is idle but hot (a fan may have stopped)
+- **Log**: click a card to see its history — a 7-day temperature chart and when it overheated, throttled or a fan
+  stopped; recording continues while the dashboard is closed
+- **Instant alerts**: overheating, a stopped fan, an unreachable server or a nearly full disk pop up a notification
+  right away (can be turned off)
+- **Portrait monitors**: rotate the monitor upright and the dashboard switches to a portrait layout
 - **Photo frame**: a slideshow on your other monitor (your own photos, or high-quality landscapes downloaded automatically);
   with one monitor it alternates with the dashboard
 - **Home server**: CPU, memory, VMs/containers and storage of Proxmox hosts, rotating between several (optional)
@@ -48,6 +56,8 @@ your home server (Proxmox) — while your other monitor shows a photo slideshow.
 - **Light**: only redraws what changed — about 3% of one CPU core while open, practically nothing when closed
 
 ![Wide layout](screenshots/dashboard-wide.png)
+
+<p align="center"><img src="screenshots/dashboard-portrait.png" width="420" alt="直式 Portrait layout"></p>
 
 | | |
 |---|---|

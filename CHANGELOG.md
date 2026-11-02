@@ -1,5 +1,38 @@
 # 更新日誌 Changelog
 
+## 0.3.0（2026-11-03）
+
+### 新功能
+- **日誌**：在儀表板上單擊一張卡片，打開那張卡片的紀錄：7 天的每小時最高溫度和降頻次數圖（滑鼠移上去看那一小時），
+  加上事件清單（何時降頻、過熱、風扇停了、連不上、guest 停了、Proxmox 的啟動／關機／備份…）。
+  點標題列看那台的全部。儀表板收著也在背景記（本機每分鐘、遠端每 5 分鐘），保留 35 天。
+- **降頻、過熱記下「當時在跑」**：那段時間最吃 CPU 的服務／程式和用了幾核；Proxmox 上看得到是哪個容器的哪個服務、
+  是排程（附換成本機時間的排程時間）還是手動下的指令，取樣之間已經跑完的也算得到。
+  Proxmox 要更新主機上的 agent（`bin/remote-agent.sh`，多了 `cpu`、`who` 兩種輸出）；沒更新就是不記這一行。
+- **有狀況當下就通知**：過熱、風扇停了、連不上、guest 停了、硬碟快滿、備份失敗…記到的那一刻就跳通知（降頻和沒到 100°C 的過熱太常發生，只記在日誌）。
+  原本中午的每日檢查不再跳通知（它回頭看 24 小時，會把昨天的降頻當成剛發生）。
+- **通知開關**：設定 →「一般」多了「跳桌面通知」，取消勾選就不跳通知，狀況照樣記在日誌。
+- **直式版型**：螢幕轉成直立的就自動換成直式（開著時轉向也會跟著換），轉回橫的換回原本的版型。卡片排成兩欄，型號、開機時間、網速那行移到大標題下面。
+
+### New
+- **Log**: click a card on the dashboard to see its history: a 7-day chart of the hourly max temperature and throttle
+  count (hover for that hour), plus a list of events (throttling, overheating, stopped fans, lost connections, stopped
+  guests, Proxmox start/shutdown/backup tasks…). Click the header for everything on that machine. Recording runs in the
+  background even while the dashboard is closed (every minute locally, every 5 minutes for servers) and keeps 35 days.
+- **Throttling and overheating events record what was busy**: the services/apps using the most CPU at the time and how
+  many cores. On Proxmox it shows which container and service, whether it was scheduled (with the schedule converted to
+  local time) or run by hand, including jobs that finished between samples. Requires updating the agent on the host
+  (`bin/remote-agent.sh`, new `cpu` and `who` modes); without it this line is simply not recorded.
+- **Alerts as they happen**: overheating, stopped fans, lost connections, stopped guests, nearly full disks, failed
+  backups… pop up a notification the moment they are recorded (throttling, and overheating below 100°C, happen too
+  often, so they are only logged). The noon daily check no longer notifies (it looked back 24 hours, so yesterday's
+  throttling showed up as if it had just happened).
+- **Notification switch**: Settings → General has a new “Show desktop notifications” option. When unchecked,
+  nothing pops up, but alerts are still recorded in the log.
+- **Portrait layout**: when the monitor is rotated upright the dashboard switches to it automatically (also while
+  open), and back to your chosen layout when it is landscape again. Cards in two columns, with the model / uptime /
+  network line moved under the title.
+
 ## 0.2.0（2026-10-07）
 
 ### 新功能
